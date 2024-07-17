@@ -68,7 +68,7 @@ User-friendly interface with Handlebars templates and Bootstrap styling.
 - `src/routes/carts.router.js`: Routes for cart management.
 - `src/routes/views.router.js`: Routes for application views.
 - `src/public/js/main.js`: Client-side logic for real-time interaction.
-- `src/public/style.css`: Custom application styles.
+- `src/public/css/style.css`: Custom application styles.
 - `src/views/layouts/main.handlebars`: Main layout for views.
 - `src/views/cartDetail.handlebars`: View for Cart Details.
 - `src/views/home.handlebars`: Main view for the product list.
