@@ -40,7 +40,13 @@ User-friendly interface with Handlebars templates and Bootstrap styling.
 
 ## Products
 
-- `GET /api/products`: Get the list of products.
+- `GET /api/products`: Retrieves a paginated list of products with optional filtering and sorting capabilities.
+  - It supports the following filters:
+    - category (string): Filter products by category.
+    - availability (boolean): Filter products by availability. Use true for available products and false for unavailable ones.
+  - It also, can sort by price in ascending or descending order:
+    -  asc: Sorts products with the lowest price first. 
+    -  desc: Sorts products with the highest price first.
 - `GET /api/products/:pid`: Get a product by its ID.
 - `POST /api/products`: Add a new product.
 - `PUT /api/products/:pid`: Update an existing product.
@@ -53,7 +59,6 @@ User-friendly interface with Handlebars templates and Bootstrap styling.
 - `POST /api/carts/:cid/products/:pid`: Add a product to the cart.
 - `PUT /api/carts/:cid/products/:pid`: Update a product in the cart. You can optionally specify the desired product quantity in the request body.
 - `DELETE /api/carts/:cid/products/:pid`: Remove a product from the cart.
-
 
 # Project Structure
 
