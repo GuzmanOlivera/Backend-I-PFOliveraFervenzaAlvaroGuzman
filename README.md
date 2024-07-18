@@ -51,7 +51,7 @@ User-friendly interface with Handlebars templates and Bootstrap styling.
 - `POST /api/carts`: Create a new cart.
 - `GET /api/carts/:cid`: Get a cart by its ID.
 - `POST /api/carts/:cid/products/:pid`: Add a product to the cart.
-- `PUT /api/carts/:cid/products/:pid`: Update a product in the cart.
+- `PUT /api/carts/:cid/products/:pid`: Update a product in the cart. You can optionally specify the desired product quantity in the request body.
 - `DELETE /api/carts/:cid/products/:pid`: Remove a product from the cart.
 
 
